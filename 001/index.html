@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Carros</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 id="infocarro" class="text-center">-</h1>
+        </div>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img id="carro1" src="img/bmw x6 2017.jpeg" alt="Imagem 1" />
+                <img id="carro2" src="img/BRABUS-AMG-63-G-FEITO.webp" alt="Imagem 2" />
+                <img id="carro3" src="img/corolla blacl.jpeg" alt="Imagem 3" />
+                <img id="carro4" src="img/fiat uno 1992.jpeg" alt="Imagem 4" />
+            </div>
+            <div class="carousel-controls">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <div>
+                <p>Marca: <span id="marca"></span></p>
+                <p>Ano de Fabricação: <span id="ano"></span></p>
+                <p>Carro <span id="formato"></span></p>
+                <p>Preço:R$ <span class="preço"></span> a vista</p>
+                <p>
+                    ou em
+                    <select id="select">
+                        <option value="1">1x sem juros</option>
+                        <option value="2">2x sem juros</option>
+                        <option value="3">3x sem juros</option>
+                        <option value="4">4x sem juros</option>
+                        <option value="5">5x sem juros</option>
+                        <option value="6">6x sem juros</option>
+                        <option value="7">7x sem juros</option>
+                        <option value="8">8x sem juros</option>
+                        <option value="9">9x sem juros</option>
+                        <option value="10">10x sem juros</option>
+                    </select>
+                    <label for="preco">Valor de entrada:</label>
+                    <input type="number" id="entrada" step="0.01" min="0" placeholder="Digite o valor em R$" />
+                    <button id="button">OK</button>
+                </p>
+            </div>
+            <div class="flex
+            ">
+                <div>
+                    <p id="INFO"></p>
+                </div>
+                <div>
+                    <span id="Total"></span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="js/funcao.js"></script>
+</body>
+
+</html>
